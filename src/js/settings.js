@@ -50,6 +50,11 @@ export const select = {
     addressInput: `input[name="address"]`,
     starter: `.checkbox input[type="checkbox"]`,
   },
+  home: {
+    carousel: '.carousel',
+    order: '.intro-order',
+    book: '.intro-booking',
+  },
   nav: {
     links: '.main-nav a',
   },

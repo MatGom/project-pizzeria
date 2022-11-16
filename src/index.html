@@ -8,7 +8,8 @@
   <title>Pizzeria</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext"
     rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/23131ba73a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -79,10 +80,95 @@
 
   <script id="template-home-page" type="text/x-handlebars-template">
     <div class="intro">
-      <a href="#/order" class="intro-order">Order online</a>
-      <a href="#/booking" class="intro-booking">Book a table</a>
-      <div class="intro-info"></div>
+      <div class="intro-box intro-order intro-link">
+        <h2 class="intro-title">Order online</h2>
+        <p>Delicious food delivered to your door</p>
+      </div>
+      <div class="intro-box intro-booking intro-link">
+        <h2 class="intro-title">Book a table</h2>
+        <p>Book your table in advance</p>
+      </div>
+      <div class="intro-box intro-info">
+        <h2 class="intro-title">Opening hours:</h2>
+        <p>Tue-Sun, 12PM - 12AM</p>
+      </div>
     </div>
+
+    <div class="carousel">
+      <div class="carousel-cell">
+        <img class="carousel-image" src="../images/home/pizza-3.jpg" alt="picture of people in restaurant">
+        <div class="carousel-text">
+          <h3>Best Service</h3>
+          <p class="carousel-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa beatae, quasi maiores consectetur fugiat?</p>
+          <p class="carousel-signature">- Joe Bloggs</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-image" src="../images/home/pizza-3.jpg" alt="picture of people in restaurant">
+        <div class="carousel-text">
+          <h3>Great Venue</h3>
+          <p class="carousel-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa beatae, quasi maiores consectetur fugiat?</p>
+          <p class="carousel-signature">- Amy Goodwing</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-image" src="../images/home/pizza-3.jpg" alt="picture of people in restaurant">
+        <div class="carousel-text">
+          <h3>Good Snacks</h3>
+          <p class="carousel-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa beatae, quasi maiores consectetur fugiat?</p>
+          <p class="carousel-signature">- Jamie Nelson</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <img class="carousel-image" src="../images/home/pizza-3.jpg" alt="picture of people in restaurant">
+        <div class="carousel-text">
+          <h3>Delicious Food</h3>
+          <p class="carousel-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa beatae, quasi maiores consectetur fugiat?</p>
+          <p class="carousel-signature">- Robert Barrow</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="samples">
+      <div class="sample-one sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="sample-two sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="sample-three sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="sample-four sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="sample-five sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="sample-six sample">
+        <div class="sample-icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="instagram-link">View more on Instagram</a>
   </script>
 
   <script id="template-cart-product" type="text/x-handlebars-template">
@@ -259,6 +345,7 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js"></script>
   <script src="js/app.js" type="module"></script>
